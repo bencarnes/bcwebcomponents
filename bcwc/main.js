@@ -19,7 +19,9 @@ document.querySelector('#app').innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
-    <day-of-week day="7"></day-of-week>
+    <br><day-of-week day="3"></day-of-week> Wed pray
+    <br><day-of-week day="6"></day-of-week> Sat pray
+    <br><day-of-week day="7"></day-of-week> Sunday Services
   </div>
 `
 

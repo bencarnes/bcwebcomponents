@@ -7,10 +7,8 @@ class DayOfWeekComponent extends HTMLElement {
         const dayOfWeek = parseInt(this.getAttribute('day'));
 
         if (dayOfWeek >= 1 && dayOfWeek <= 7) {
-            const date = new Date();
+            const date = new Date('6/3/2024');
             date.setDate(date.getDate() + (dayOfWeek - date.getDay()));
-
-            const dayName = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date);
 
             this.innerHTML = `${date.toLocaleDateString(undefined, {month: 'long', day: "numeric"})}`;
         } else {
